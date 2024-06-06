@@ -1,0 +1,11 @@
+#!/bin/sh
+FILE="root/scripts/first.sh"
+for file on /root/scripts/*
+do
+	echo "$file"
+done
+
+for i in $(cat $FILE)
+do
+	echo $i
+done
